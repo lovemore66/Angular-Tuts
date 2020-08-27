@@ -1,0 +1,27 @@
+<input 
+label="Name"
+type="text"
+[value]="Yourname"
+[(ngModel)]="Yourname">
+
+{{Yourname}}
+
+<button (click)="lovefunction()">Do you like me?</button>
+<table>
+    <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Profession</td>
+    </tr>
+
+    <tr *ngFor="let student of students; let i = index; let evenrecords= even; let oddrecords = odd" [ngClass]="{odd:oddrecords, even:evenrecords}">
+        <td>{{ i +1 }}</td>
+         <td>{{student.name}} </td>
+         <td>{{student.Age}} </td>
+         <td>{{student.Profession}}</td>
+    </tr>
+
+</table>
+
+

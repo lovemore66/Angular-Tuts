@@ -1,0 +1,22 @@
+$font-size:20px;
+ul{
+    li{
+        list-style-type: none;
+        font-size: $font-size;
+        line-height: 1.6;
+    }
+}
+
+
+    tr.even{
+        background:gray;
+    
+    }
+
+    tr.odd{
+        background: skyblue;
+    }
+
+    td{
+        padding: 8px;
+    }
