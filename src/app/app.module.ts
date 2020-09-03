@@ -11,6 +11,7 @@ import { LoginComponent } from './main-body/login/login.component';
 import { SignupComponent } from './main-body/signup/signup.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
+import { WarehousesComponent } from './warehouses/warehouses.component';
 
 
 
@@ -24,15 +25,17 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     SignupComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    WarehousesComponent,
    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+   
     FormsModule,
     RouterModule.forRoot([
-      
+        
         {path: '', component: HomeComponent},
         {path: 'contact', component: ContactComponent},
         {path: 'signup', component: SignupComponent},

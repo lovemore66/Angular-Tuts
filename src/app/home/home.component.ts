@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AlertsService } from '../home/alerts.service';
 
 @Component({
   selector: 'app-home',
@@ -7,10 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+
+
+  constructor( private alertsService: AlertsService) { }
 
   ngOnInit(): void {
   }
 
+ //getalerts(){
+  // console.log("The btn has been clicked");
+ //}
 
 }
